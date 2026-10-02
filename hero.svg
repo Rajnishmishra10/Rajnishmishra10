@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" role="img" aria-label="Rajnish Mishra - BCA Graduate, Aspiring Full Stack Developer">
+  <defs>
+    <linearGradient id="hr-aurora" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="hr-border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="0.5" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0.7"/>
+    </linearGradient>
+    <pattern id="hr-dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+    <radialGradient id="hr-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .rise { animation: rise 0.9s ease-out both; }
+      .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.3s; }
+      .d3 { animation-delay: 0.5s; } .d4 { animation-delay: 0.8s; }
+      @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+      .float { animation: float 4s ease-in-out infinite; }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    </style>
+  </defs>
+
+  <!-- card -->
+  <rect width="900" height="320" rx="22" fill="#0d0e16"/>
+  <rect width="900" height="320" rx="22" fill="url(#hr-dots)"/>
+  <rect x="1" y="1" width="898" height="318" rx="21" fill="none" stroke="url(#hr-border)" stroke-width="1.5"/>
+  <circle cx="720" cy="150" r="190" fill="url(#hr-glow)"/>
+
+  <!-- open to opportunities pill -->
+  <g class="rise d1">
+    <rect x="40" y="34" width="190" height="28" rx="14" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <circle cx="58" cy="48" r="4" fill="#22d3ee">
+      <animate attributeName="r" values="4;6;4" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="72" y="52.5" font-size="13" fill="#22d3ee" class="mono">open to opportunities</text>
+  </g>
+
+  <!-- greeting -->
+  <text x="40" y="100" font-size="20" fill="#9aa0b4" class="rise d2 mono">Hi there, I'm</text>
+
+  <!-- name -->
+  <text x="40" y="154" font-size="52" font-weight="800" fill="url(#hr-aurora)" class="rise d3">Rajnish Mishra</text>
+
+  <!-- cycling roles -->
+  <g class="mono" font-size="20" fill="#e6e8f2">
+    <text x="40" y="192" opacity="1">&gt; BCA Graduate
+      <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.28;0.33;0.6;0.66;0.95;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="40" y="192" opacity="0">&gt; Aspiring Full Stack Developer
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3;0.36;0.6;0.66;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="40" y="192" opacity="0">&gt; Problem Solver
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.63;0.7;0.94;1" dur="9s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- pitch -->
+  <text x="40" y="232" font-size="15" fill="#9aa0b4" class="rise d4">I build web apps, learn new tech, and write slightly better code every day.</text>
+
+  <!-- meta row -->
+  <g class="rise d4" font-size="13" fill="#9aa0b4">
+    <g transform="translate(40,262)">
+      <path d="M7 0a5 5 0 0 0-5 5c0 4 5 9 5 9s5-5 5-9a5 5 0 0 0-5-5z" fill="none" stroke="#f472b6" stroke-width="1.5"/>
+      <circle cx="7" cy="5" r="1.8" fill="#f472b6"/>
+      <text x="22" y="12">Ghazipur, UP</text>
+    </g>
+    <g transform="translate(170,262)">
+      <rect x="0" y="2" width="14" height="10" rx="2" fill="none" stroke="#22d3ee" stroke-width="1.5"/>
+      <path d="M1 3l6 5 6-5" fill="none" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="22" y="12">rm924581@gmail.com</text>
+    </g>
+    <g transform="translate(360,262)">
+      <path d="M2 12l4-10M8 12l4-10" stroke="#a78bfa" stroke-width="1.5" fill="none"/>
+      <text x="22" y="12">@Rajnishmishra10</text>
+    </g>
+  </g>
+
+  <!-- code window illustration -->
+  <g class="float">
+    <g transform="translate(560,70)">
+      <rect width="300" height="180" rx="12" fill="#14162a" stroke="url(#hr-border)" stroke-width="1.5"/>
+      <path d="M0 12a12 12 0 0 1 12-12h276a12 12 0 0 1 12 12v22H0z" fill="#1b1e38"/>
+      <circle cx="18" cy="17" r="5" fill="#f472b6"/>
+      <circle cx="36" cy="17" r="5" fill="#fbbf24"/>
+      <circle cx="54" cy="17" r="5" fill="#22d3ee"/>
+      <text x="80" y="21" font-size="11" fill="#6b7190" class="mono">developer.js</text>
+      <g class="mono" font-size="13">
+        <text x="20" y="62"><tspan fill="#a78bfa">const</tspan><tspan fill="#e6e8f2"> dev = {</tspan></text>
+        <text x="36" y="84"><tspan fill="#22d3ee">name</tspan><tspan fill="#e6e8f2">: </tspan><tspan fill="#f472b6">"Rajnish"</tspan><tspan fill="#e6e8f2">,</tspan></text>
+        <text x="36" y="106"><tspan fill="#22d3ee">stack</tspan><tspan fill="#e6e8f2">: [</tspan><tspan fill="#f472b6">"React"</tspan><tspan fill="#e6e8f2">,</tspan></text>
+        <text x="52" y="128"><tspan fill="#f472b6">"Node"</tspan><tspan fill="#e6e8f2">, </tspan><tspan fill="#f472b6">"MySQL"</tspan><tspan fill="#e6e8f2">],</tspan></text>
+        <text x="36" y="150"><tspan fill="#22d3ee">learning</tspan><tspan fill="#e6e8f2">: </tspan><tspan fill="#a78bfa">true</tspan></text>
+        <text x="20" y="168" fill="#e6e8f2">};</text>
+        <rect x="42" y="157" width="8" height="14" fill="#22d3ee">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+  </g>
+</svg>
